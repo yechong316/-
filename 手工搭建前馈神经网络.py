@@ -80,7 +80,9 @@ class Nernul_network:
 
         dy_dw =  y_.T * np.multiply(dl_dy, np.multiply(h_, 1 - h_))
         w_ -= lr * dy_dw
-
+        '''
+        这里需要有一个遍历的过程，留待后续解决
+        '''
         for i in range(self.length - 1, 0, -1):
 
             y_n_1 = y_
