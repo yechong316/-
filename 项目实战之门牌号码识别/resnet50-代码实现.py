@@ -185,7 +185,7 @@ if __name__ == "__main__":
     # x = tf.random_normal([32, 224, 224, 3])
     resnet = ResNet50(x)
     pred=resnet.logits
-    loss = tf.nn.softmax_cross_entropy_with_logits(logits=pred, labels=y)  # 损失函数
+    loss = tf.nn.softmax_cross_entropy_with_logits_v2(logits=pred, labels=y)  # 损失函数
     # loss = tf.nn.sigmoid_cross_entropy_with_logits
     opt = tf.train.AdamOptimizer(learning_rate=lr).minimize(loss)  # 优化器
     # one_hot 17位
@@ -195,7 +195,10 @@ if __name__ == "__main__":
     acc_tf = tf.equal(tf.argmax(pred, 1), tf.argmax(y, 1))
     acc = tf.reduce_mean(tf.cast(acc_tf, tf.float32))
     # 4.训练
-    with tf.Session() as sess:
+    config = tf.ConfigProto(allow_soft_placement=True)
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
+    config.gpu_options.allow_growth = True
+    with tf.Session(config=config) as sess:
         sess.run(tf.global_variables_initializer())  # 初始化变量
         base_lr = 0.01
         learning_rate = base_lr

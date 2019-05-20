@@ -7,6 +7,48 @@ from scipy.misc import imshow, imread, imresize
 # 定义神经网络 在此采用vgg11，但是取消第五层卷积层
 # ######################################################
 
+def load_data(mat_path, sample=None):
+    mat = sio.loadmat(mat_path)
+    data = mat['X']
+    label_ = mat['y']
+    data = np.transpose(data, [3, 0, 1, 2])
+    data = data - np.mean(data, axis=(0, 1, 2))
+
+    if sample == None:
+
+        label = np.zeros(shape=[label_.shape[0], 10])
+        for i in range(label_.shape[0]):
+
+            num = label_[i][0]
+            if num == 10:
+
+                label[i][0] = 1
+            else:
+
+                label[i][num] = 1
+        return data, label
+    else:
+
+        # 对数据进行采样
+        number = sample
+        np.random.seed(40)
+
+        samples = np.random.choice(data.shape[0], number)
+        data_sample = data[samples]
+        label_sample = label_[samples]
+
+        label = np.zeros(shape=[label_sample.shape[0], 10])
+        for i in range(label.shape[0]):
+
+            num = label_sample[i][0]
+            if num == 10:
+
+                label[i][0] = 1
+            else:
+
+                label[i][num] = 1
+        return data_sample, label
+
 def vgg_network(x, n_class):
 
     net_total = {}
@@ -134,34 +176,8 @@ def vgg_network(x, n_class):
 # 加载数据并进行数据预处理
 # ######################################################
 datasets_path = r"D:\迅雷下载\train_32x32.mat"
-mat = sio.loadmat(datasets_path)
-data = mat['X']
-# print('data的格式为{}:'.format(data.shape))
-label_ = mat['y']
-# plt.imshow(data[:, :, :, 0])
-# plt.show()
-# 对数据进行采样
-number = 10000
-np.random.seed(40)
-data = np.transpose(data, [3, 0, 1, 2])
-data = data - np.mean(data, axis=(0, 1, 2))
-# samples = np.random.choice(data.shape[0], number)
-# data_sample = np.array([
-#    data[i] for i in samples
-# ])
-# data_sample = data[samples]
-# label = label[samples]
-# label_sample = np.zeros(shape=[label.shape[0], 10])
-label = np.zeros(shape=[label_.shape[0], 10])
-for i in range(label.shape[0]):
-
-    num = label_[i][0]
-    if num == 10:
-
-        label[i][0] = 1
-    else:
-
-        label[i][num] = 1
+sample = 12800
+data, label = load_data(datasets_path, sample=sample)
 
 # print('data的格式为{}:'.format(data_sample.shape))
 # print('label的格式为{}:'.format(label_sample.shape))
@@ -201,10 +217,11 @@ config.gpu_options.allow_growth = True
 with tf.Session(config=config) as sess:
 
     epochs = 1000
-    batch_size = 1600 * 5
-    display_epoch = 20
+    batch_size = 128
+    display_epoch = 100
     base_lr = 0.01
     learning_rate = base_lr
+
     for epoch in range(epochs):
         sess.run(tf.global_variables_initializer())
 
@@ -220,9 +237,12 @@ with tf.Session(config=config) as sess:
 
             sess.run(opt, feed_dict={x: X_train, y: Y_train, lr: learning_rate})
             cost, accuaray = sess.run([loss, acc], {x: X_train, y: Y_train, lr: learning_rate})
-            print('step:%s,loss:%f,acc:%f' % (str(epoch) + '-' + str(i), cost[0], accuaray))
+
             # 动态修改学习率
             learning_rate = base_lr * (1 - epoch / epochs) ** 2
+        if epoch % display_epoch == 0:
+
+            print('step:%s,loss:%f,acc:%f' % (str(epoch) + '-' + str(i), cost[0], accuaray))
     save = tf.train.Saver()
     save.save(sess, './resnet/门牌号码')
 
