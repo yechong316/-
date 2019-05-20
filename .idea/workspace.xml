@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1ae5480-863a-4812-8545-aff2cae69166" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/项目实战之门牌号码识别/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/项目实战之门牌号码识别/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/深度神经网络入门/手工搭建前馈神经网络.py" beforeDir="false" afterPath="$PROJECT_DIR$/深度神经网络入门/手工搭建前馈神经网络-草稿.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/项目实战之门牌号码识别/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
+            <state relative-caret-position="5112">
+              <caret line="213" selection-start-line="213" selection-end-line="215" selection-end-column="38" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -25,19 +26,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/framework/tensor_util.py">
+        <entry file="file://$PROJECT_DIR$/项目实战之门牌号码识别/ai11_CNNNetTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="346" selection-start-line="346" selection-end-line="346" />
+            <state relative-caret-position="609">
+              <caret line="166" column="30" selection-start-line="166" selection-start-column="30" selection-end-line="166" selection-end-column="30" />
+              <folding>
+                <element signature="e#37#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/深度神经网络入门/手动搭建反向传播神经网络.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+              <folding>
+                <element signature="e#372#385#0" expanded="true" />
+                <element signature="e#494#1165#1" />
+                <element signature="e#5451#5870#0" />
+                <element signature="e#5451#5702#1" />
+                <element signature="e#5726#5811#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/项目实战之门牌号码识别/resnet50-代码实现.py">
+        <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-708247146/numpy/random/mtrand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="214" selection-start-line="214" selection-end-line="216" />
+            <state relative-caret-position="-917">
+              <caret line="2079" column="4" selection-start-line="2079" selection-start-column="4" selection-end-line="2079" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -64,6 +84,8 @@
       <find>Variable((np.random.random(</find>
       <find>base_lr</find>
       <find>train_epoch</find>
+      <find>sample</find>
+      <find>xrange</find>
     </findStrings>
     <replaceStrings>
       <replace>128</replace>
@@ -71,12 +93,16 @@
       <replace>tf.cast(np.random.random</replace>
       <replace>relu</replace>
       <replace>get_variable(</replace>
+      <replace>label</replace>
+      <replace>range</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/深度神经网络入门/手动搭建反向传播神经网络.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/项目实战之门牌号码识别/resnet50-代码实现.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/项目实战之门牌号码识别/main.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -91,12 +117,17 @@
         <option value="$PROJECT_DIR$/项目实战之门牌号码识别/vgg16_python3.py" />
         <option value="$PROJECT_DIR$/深度神经网络入门/其他人做的svnh分类.py" />
         <option value="$PROJECT_DIR$/项目实战之门牌号码识别/main.py" />
+        <option value="$PROJECT_DIR$/../ch03_DeepLearningFoundation/CNN/GoogleNet/inception_v1.py" />
+        <option value="$PROJECT_DIR$/项目实战之门牌号码识别/resnet/jresult.txt" />
+        <option value="$PROJECT_DIR$/项目实战之门牌号码识别/resnet50-代码实现.py" />
+        <option value="$PROJECT_DIR$/项目实战之门牌号码识别/ai11_CNNNetTest.py" />
+        <option value="$PROJECT_DIR$/深度神经网络入门/手动搭建反向传播神经网络.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="772" />
-    <option name="y" value="87" />
+    <option name="x" value="771" />
+    <option name="y" value="86" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -135,6 +166,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -158,8 +190,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="前馈神经网络案例之流行服饰" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.conv">
+    <configuration name="手动搭建反向传播神经网络" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Introduce-of-DL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,11 +199,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/深度神经网络入门" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\人工智能\Introduce-of-DL\深度神经网络入门\前馈神经网络案例之流行服饰.py" />
+      <option name="SCRIPT_NAME" value="D:\人工智能\Introduce-of-DL\深度神经网络入门\反向传播神经网络-大神撰写.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,7 +212,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ai11_CNNNetTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ai11_CNNNetTest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Introduce-of-DL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -188,11 +220,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/旧电脑/人工智能" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/项目实战之门牌号码识别" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/项目实战之门牌号码识别/ai11_CNNNetTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="conv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Introduce-of-DL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../neural-networks-and-deep-learning/src" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:/旧电脑/人工智能/ai11_CNNNetTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../neural-networks-and-deep-learning/src/conv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,28 +275,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="session" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Introduce-of-DL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/client" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/client/session.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="vgg16_python3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="resnet50-代码实现" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Introduce-of-DL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -255,7 +287,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/项目实战之门牌号码识别/vgg16_python3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/项目实战之门牌号码识别/resnet50-代码实现.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -266,11 +298,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.conv" />
+        <item itemvalue="Python.手动搭建反向传播神经网络" />
+        <item itemvalue="Python.ai11_CNNNetTest (1)" />
+        <item itemvalue="Python.resnet50-代码实现" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.ai11_CNNNetTest" />
-        <item itemvalue="Python.session" />
-        <item itemvalue="Python.vgg16_python3" />
-        <item itemvalue="Python.前馈神经网络案例之流行服饰" />
       </list>
     </recent_temporary>
   </component>
@@ -298,24 +330,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15455747" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1994716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.4993395" weight="0.14022663" />
+      <window_info active="true" anchor="bottom" id="Debug" order="2" sideWeight="0.4993395" visible="true" weight="0.47025496" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5006605" side_tool="true" weight="0.4305949" />
-      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.7357992" weight="0.18413597" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.7357992" weight="0.27053824" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="3" sideWeight="0.91347426" visible="true" weight="0.37533513" />
+      <window_info anchor="right" id="Run" order="3" sideWeight="0.91347426" visible="true" weight="0.26206434" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -331,6 +364,21 @@
           <line>23</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/深度神经网络入门/手动搭建反向传播神经网络.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/深度神经网络入门/手动搭建反向传播神经网络.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/深度神经网络入门/手动搭建反向传播神经网络.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -340,6 +388,50 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>mini_batches</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>nabla_w</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.weights</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>w-(eta/len(mini_batch))*nw</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>nabla_b</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>batch = data.shape[0] // batch_size</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data.shape[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-708247146/numpy/core/multiarray.py">
@@ -353,13 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="826">
           <caret line="3723" column="27" lean-forward="true" selection-start-line="3723" selection-start-column="26" selection-end-line="3723" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/深度神经网络入门/手工搭建前馈神经网络.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -547,23 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-708247146/numpy/random/mtrand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53016">
-          <caret line="2213" column="4" selection-start-line="2213" selection-start-column="4" selection-end-line="2213" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/旧电脑/人工智能/ai11_CNNNetTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="140" selection-start-line="140" selection-end-line="144" selection-end-column="62" />
-          <folding>
-            <element signature="e#527#4547#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -585,19 +653,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ch03_DeepLearningFoundation/CNN/GoogleNet/inception_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="59" column="69" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
+          <folding>
+            <element signature="e#761#799#0" expanded="true" />
+            <element signature="e#2612#14647#0" />
+            <element signature="e#14945#16152#1" />
+            <element signature="e#17326#18915#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tflearn/datasets/oxflower17.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../深度学习/deep-learning/RNN/ai11_RNNNetTest.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/旧电脑/人工智能/ai11_CNNNetTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#527#4547#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/项目实战之门牌号码识别/resnet/result.txt" />
     <entry file="file://$PROJECT_DIR$/项目实战之门牌号码识别/resnet50-代码实现.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="214" selection-start-line="214" selection-end-line="216" />
+        <state relative-caret-position="474">
+          <caret line="187" column="53" selection-start-line="187" selection-start-column="53" selection-end-line="187" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#642#1002#0" />
+            <element signature="e#1068#1392#0" />
+            <element signature="e#1513#2956#0" />
+            <element signature="e#6549#7270#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/项目实战之门牌号码识别/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
+        <state relative-caret-position="5112">
+          <caret line="213" selection-start-line="213" selection-end-line="215" selection-end-column="38" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/项目实战之门牌号码识别/ai11_CNNNetTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="166" column="30" selection-start-line="166" selection-start-column="30" selection-end-line="166" selection-end-column="30" />
+          <folding>
+            <element signature="e#37#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/深度神经网络入门/手工搭建前馈神经网络-草稿.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-708247146/numpy/random/mtrand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-917">
+          <caret line="2079" column="4" selection-start-line="2079" selection-start-column="4" selection-end-line="2079" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/深度神经网络入门/手动搭建反向传播神经网络.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#372#385#0" expanded="true" />
+            <element signature="e#494#1165#1" />
+            <element signature="e#5451#5870#0" />
+            <element signature="e#5451#5702#1" />
+            <element signature="e#5726#5811#0" />
           </folding>
         </state>
       </provider>
