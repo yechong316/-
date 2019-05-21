@@ -83,22 +83,28 @@ class Nernul_network:
         '''
         这里需要有一个遍历的过程，留待后续解决
         '''
-        for i in range(self.length - 1, 0, -1):
+        # for i in range(self.length - 1, 0, -1):
+        #
+        #     y_n_1 = y_
+        #     h_ = self.layer[i]['hidden']
+        #     y_ = self.layer[i]['output']
+        #     w_ = self.layer[i]['weight']
+        #     dy_dw *= h_ * (1 - h_) * y_ / y_n_1
+        #     dy_dw *= y_.T * dy_dw
+        #
+        #     w_ -= lr * dy_dw
 
-            y_n_1 = y_
-            h_ = self.layer[i]['hidden']
-            y_ = self.layer[i]['output']
-            w_ = self.layer[i]['weight']
-            dy_dw *= h_ * (1 - h_) * y_ / y_n_1
-            dy_dw *= y_.T * dy_dw
+        dL_dY = np.multiply((self.labels - self.logits), self.layer[-1]['hidden'])
 
-            w_ -= lr * dy_dw
+
 
 
 
 
 
 def sigoid(x): return  1 / ( 1 + np.exp(-x))
+
+def divsigoid(h): return  h * ( 1 - h )
 
 
 

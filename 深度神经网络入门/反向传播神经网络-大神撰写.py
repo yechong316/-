@@ -29,6 +29,8 @@ class Network(object):
         layer is assumed to be an input layer, and by convention we
         won't set any biases for those neurons, since biases are only
         ever used in computing the outputs from later layers."""
+
+        # 初始每层的w，b
         self.num_layers = len(sizes)
         self.sizes = sizes
         self.biases = [np.random.randn(y, 1) for y in sizes[1:]]
@@ -38,6 +40,7 @@ class Network(object):
     def feedforward(self, a):
         """Return the output of the network if ``a`` is input."""
         for b, w in zip(self.biases, self.weights):
+            print('w:{}, b:{}'.format(w, b))
             a = sigmoid(np.dot(w, a)+b)
         return a
 
@@ -54,59 +57,79 @@ class Network(object):
         if test_data: n_test = len(test_data)
         n = len(training_data)
 
-        for j in range(epochs):
+        for j in range(epochs): # 训练epochs次
 
             random.shuffle(training_data) # 打乱样本顺序
-            mini_batches = [
-                training_data[k:k+mini_batch_size]
-                for k in range(0, n, mini_batch_size)] # 抽取mini小样本数量
 
+            # 将总样本分解为一个个的小样本
+            mini_batches = [training_data[k:k+mini_batch_size]
+                for k in range(0, n, mini_batch_size)]
+
+            # 依次取出小样本进行训练
             for mini_batch in mini_batches:
 
                 self.update_mini_batch(mini_batch, eta)
+
             if test_data:
 
                 print ("Epoch {0}: {1} / {2}".format(
                     j, self.evaluate(test_data), n_test))
             else:
 
-                print ("Epoch {0} complete".format(j))
+                print ("Epoch {} complete,y_layer:\n{} ".format(j,
+                                    self.y_layer))
 
     def update_mini_batch(self, mini_batch, eta):
         """Update the network's weights and biases by applying
         gradient descent using backpropagation to a single mini batch.
         The ``mini_batch`` is a list of tuples ``(x, y)``, and ``eta``
         is the learning rate."""
+
+        # 初始化w， b
         nabla_b = [np.zeros(b.shape) for b in self.biases]
         nabla_w = [np.zeros(w.shape) for w in self.weights]
+
         for x, y in mini_batch:
-            delta_nabla_b, delta_nabla_w = self.backprop(x, y)
-            nabla_b = [nb+dnb for nb, dnb in zip(nabla_b, delta_nabla_b)]
+
+            # 计算出每层隐藏层的w,b的梯度
+            (delta_nabla_b, delta_nabla_w), self.y_layer = self.backprop(x, y)
+
+            # 根据输入的样本数，
             nabla_w = [nw+dnw for nw, dnw in zip(nabla_w, delta_nabla_w)]
+            nabla_b = [nb+dnb for nb, dnb in zip(nabla_b, delta_nabla_b)]
+
         self.weights = [w-(eta/len(mini_batch))*nw
+                        # w是原先的权重，nw是权重更新的梯度
                         for w, nw in zip(self.weights, nabla_w)]
         self.biases = [b-(eta/len(mini_batch))*nb
                        for b, nb in zip(self.biases, nabla_b)]
+
 
     def backprop(self, x, y):
         """Return a tuple ``(nabla_b, nabla_w)`` representing the
         gradient for the cost function C_x.  ``nabla_b`` and
         ``nabla_w`` are layer-by-layer lists of numpy arrays, similar
         to ``self.biases`` and ``self.weights``."""
+
         nabla_b = [np.zeros(b.shape) for b in self.biases]
         nabla_w = [np.zeros(w.shape) for w in self.weights]
+
         # feedforward
         activation = x
         activations = [x] # list to store all the activations, layer by layer
         zs = [] # list to store all the z vectors, layer by layer
+
         for b, w in zip(self.biases, self.weights):
+
             z = np.dot(w, activation)+b
             zs.append(z)
             activation = sigmoid(z)
             activations.append(activation)
+
         # backward pass
-        delta = self.cost_derivative(activations[-1], y) * \
-            sigmoid_prime(zs[-1])
+        # 输出层到期望值之间的偏导数
+        delta = self.cost_derivative(activations[-1], y) * sigmoid_prime(zs[-1])
+
         nabla_b[-1] = delta
         nabla_w[-1] = np.dot(delta, activations[-2].transpose())
         # Note that the variable l in the loop below is used a little
@@ -116,12 +139,13 @@ class Network(object):
         # scheme in the book, used here to take advantage of the fact
         # that Python can use negative indices in lists.
         for l in range(2, self.num_layers):
+
             z = zs[-l]
             sp = sigmoid_prime(z)
             delta = np.dot(self.weights[-l+1].transpose(), delta) * sp
             nabla_b[-l] = delta
             nabla_w[-l] = np.dot(delta, activations[-l-1].transpose())
-        return (nabla_b, nabla_w)
+        return (nabla_b, nabla_w), activations
 
     def evaluate(self, test_data):
         """Return the number of test inputs for which the neural
@@ -149,18 +173,24 @@ def sigmoid_prime(z):
 if __name__ == '__main__':
 
     neural = [2, 3, 4]
-    epochs = 1000
+    epochs = 20
     batch = 1000
     mini_batch_size = 20
     lr = 0.1
     nn = Network(neural)
-    input = np.array([0.2, 0.2]).reshape(-1, 1)
+    input = np.array([0.2, 0.3]).reshape(-1, 1)
+    output = np.array([0.3, 0.2]).reshape(-1, 1)
 
-    fw = nn.feedforward(input)
+    # fw = nn.feedforward(input)
+    # print(fw)
+
+    x = np.random.randn(10)
+    y = x * 2 + np.random.randn(1) * 0.01
     train_data = [
-        (i, j) for i, j in np.random.randn(batch, 2)
+        (i, j) for i, j in zip(x, y)
     ]
-
+    print(train_data[0])
+    #
     nn.SGD(train_data, epochs, mini_batch_size, eta=lr)
     # print(fw)
     # print(1)
