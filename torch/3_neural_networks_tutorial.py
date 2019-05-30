@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 # In[1]:
@@ -52,12 +51,14 @@ import torch.nn.functional as F
 class Net(nn.Module):
 
     def __init__(self):
+
+        # super函数类的意思是将继承的父类里面的成员全部继承到本类中
         super(Net, self).__init__()
         # 1 input image channel, 6 output channels, 5x5 square convolution
-        # kernel
+        # kernel， nn.Conv2d(输入通道，输出通道，卷积核尺寸)
         self.conv1 = nn.Conv2d(1, 6, 5)
         self.conv2 = nn.Conv2d(6, 16, 5)
-        # an affine operation: y = Wx + b
+        # an affine operation: y = Wx + b， nn.Linear(输入特征, 输出特征)
         self.fc1 = nn.Linear(16 * 5 * 5, 120)
         self.fc2 = nn.Linear(120, 84)
         self.fc3 = nn.Linear(84, 10)
@@ -67,12 +68,15 @@ class Net(nn.Module):
         x = F.max_pool2d(F.relu(self.conv1(x)), (2, 2))
         # If the size is a square you can only specify a single number
         x = F.max_pool2d(F.relu(self.conv2(x)), 2)
+
+        # 将x拉成 【-1， 其他特征的乘积】
         x = x.view(-1, self.num_flat_features(x))
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         x = self.fc3(x)
         return x
 
+    # x的第二个开始的维度相乘
     def num_flat_features(self, x):
         size = x.size()[1:]  # all dimensions except the batch dimension
         num_features = 1
@@ -82,18 +86,6 @@ class Net(nn.Module):
 
 
 net = Net()
-# print(net)
-
-
-# 在模型中必须要定义 ``forward`` 函数，``backward``
-# 函数（用来计算梯度）会被``autograd``自动创建。
-# 可以在 ``forward`` 函数中使用任何针对 Tensor 的操作。
-# 
-#  ``net.parameters()``返回可被学习的参数（权重）列表和值
-# 
-# 
-
-# In[4]:
 
 params = list(net.parameters())
 # print(len(params))
@@ -107,32 +99,23 @@ print('before update weight:', params[0][0][0][0])  # conv1's .weight
 
 # In[5]:
 
-input = torch.randn(1, 1, 32, 32)
-out = net(input)
-# print('输出值：', out)
-# print('输出值：', out.size())
+input = torch.randn(10, 1, 32, 32)
 
-# 反向传播
+# r"""Sets gradients of all model parameters to zero."""
 net.zero_grad()
-out.backward(torch.randn(1, 10))
-
-# torch.nn 只支持小批量输入。整个 torch.nn 包都只支持小批量样本，而不支持单个样本。
-# 例如，nn.Conv2d 接受一个4维的张量，  每一维分别是sSamples * nChannels * Height *
-# Width（样本数*通道数*高*宽）。 如果你有单个样本，只需使用 input.unsqueeze(0) 来添加其它的维数
 
 output = net(input)
-target = torch.randn(10)
+target = torch.randn((1, 10))
 target = target.view(1, -1)
 criterion = nn.MSELoss()
 
 loss = criterion(output, target)
-# print('loss:', loss)
 
 import torch.optim as optim
 
 optimizer = optim.SGD(net.parameters(), lr=10)
 optimizer.zero_grad()
-loss = criterion(output, target)
-loss.backward()
+cost = criterion(output, target)
+cost.backward()
 optimizer.step()
 print('after update weight:', params[0][0][0][0])
