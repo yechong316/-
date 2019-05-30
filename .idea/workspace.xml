@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1ae5480-863a-4812-8545-aff2cae69166" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/深度神经网络入门/反向传播神经网络-大神撰写.py" beforeDir="false" afterPath="$PROJECT_DIR$/深度神经网络入门/反向传播神经网络-大神撰写.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/深度神经网络入门/手工搭建前馈神经网络-草稿.py" beforeDir="false" afterPath="$PROJECT_DIR$/深度神经网络入门/手工搭建前馈神经网络-草稿.py" afterDir="false" />
-    </list>
+    <list default="true" id="b1ae5480-863a-4812-8545-aff2cae69166" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,26 +11,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/深度神经网络入门/反向传播神经网络-大神撰写.py">
+        <entry file="file://$PROJECT_DIR$/优化算法/p4 momentum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="93" column="29" lean-forward="true" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+            <state relative-caret-position="345">
+              <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
               <folding>
-                <element signature="e#372#385#0" expanded="true" />
-                <element signature="e#494#1165#1" />
-                <element signature="e#1444#1610#0" />
-                <element signature="e#1712#2228#1" />
-                <element signature="e#4800#4861#0" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/深度神经网络入门/手工搭建前馈神经网络-草稿.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -108,10 +91,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1103" />
+    <option name="x" value="1102" />
     <option name="y" value="160" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -132,12 +115,7 @@
             <path>
               <item name="Introduce-of-DL" type="b2602c69:ProjectViewProjectNode" />
               <item name="Introduce-of-DL" type="462c0819:PsiDirectoryNode" />
-              <item name="深度神经网络入门" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Introduce-of-DL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Introduce-of-DL" type="462c0819:PsiDirectoryNode" />
-              <item name="项目实战之门牌号码识别" type="462c0819:PsiDirectoryNode" />
+              <item name="优化算法" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.反向传播神经网络-大神撰写">
+  <component name="RunManager" selected="Python.p4 momentum">
     <configuration name="反向传播神经网络-大神撰写" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Introduce-of-DL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,7 +235,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="resnet50-代码实现" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="p4 momentum" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Introduce-of-DL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -265,11 +243,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/项目实战之门牌号码识别" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/优化算法" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/项目实战之门牌号码识别/resnet50-代码实现.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/优化算法/p4 momentum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -280,11 +258,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.p4 momentum" />
         <item itemvalue="Python.反向传播神经网络-大神撰写" />
         <item itemvalue="Python.conv" />
         <item itemvalue="Python.手动搭建反向传播神经网络" />
         <item itemvalue="Python.ai11_CNNNetTest (1)" />
-        <item itemvalue="Python.resnet50-代码实现" />
       </list>
     </recent_temporary>
   </component>
@@ -314,12 +292,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19839142" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19815059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Debug" order="2" sideWeight="0.4993395" visible="true" weight="0.38668555" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.4993395" weight="0.38668555" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3286119" />
@@ -327,10 +305,10 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5006605" side_tool="true" weight="0.4305949" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.7357992" weight="0.14305949" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.91347426" visible="true" weight="0.37252125" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" sideWeight="0.91347426" visible="true" weight="0.16957104" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -641,9 +619,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../深度学习/deep-learning/RNN/ai11_RNNNetTest.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../深度学习/deep-learning/RNN/ai11_RNNNetTest.py" />
     <entry file="file://D:/旧电脑/人工智能/ai11_CNNNetTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -696,13 +672,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../neural-networks-and-deep-learning/src/conv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../neural-networks-and-deep-learning/src/conv.py" />
     <entry file="file://$PROJECT_DIR$/深度神经网络入门/其他人做的svnh分类.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -727,23 +697,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/深度神经网络入门/手工搭建前馈神经网络-草稿.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/深度神经网络入门/反向传播神经网络-大神撰写.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="93" column="29" lean-forward="true" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
           <folding>
             <element signature="e#372#385#0" expanded="true" />
             <element signature="e#494#1165#1" />
-            <element signature="e#1444#1610#0" />
-            <element signature="e#1712#2228#1" />
-            <element signature="e#4800#4861#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/深度神经网络入门/手工搭建前馈神经网络-草稿.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2232">
+          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/优化算法/p4 momentum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
