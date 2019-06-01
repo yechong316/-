@@ -1,43 +1,48 @@
 import torch
-import torch.nn as nn
+from torch.nn import Linear, Module, MSELoss
 import torch.nn.functional as F
 import torch.optim as optim
-x = torch.tensor([1, 2]).view(1, -1).float()
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+x = np.random.rand(100)
 
-class Net(nn.Module):
+y = x * 2 + 1 + np.random.randn(100)/100
 
-    def __init__(self):
+# plt.plot(x,y)
+# plt.show()
 
-        # super函数类的意思是将继承的父类里面的成员全部继承到本类中
-        super(Net, self).__init__()
+model = Linear(1, 1)
+criterion = MSELoss()
 
-        self.w1 = nn.Linear(2, 10)
-        self.w2 = nn.Linear(10, 10)
-        self.w3 = nn.Linear(10, 2)
+opt = optim.SGD(model.parameters(), lr=0.01)
+epochs = 1000
 
-    def forward(self, input):
+x_train = x.reshape((-1, 1)).astype('float32')
+y_train = y.reshape((-1, 1)).astype('float32')
 
-        net = F.relu(self.w1(x))
-        net = F.relu(self.w2(net))
-        out = self.w3(net)
-        return out
-# print(out)
+for i in range(epochs):
 
-criterion = nn.MSELoss()
-y = torch.tensor([2, 1]).view(1, -1).float()
+    input = torch.from_numpy(x_train)
+    target = torch.from_numpy(y_train)
+    output = model(input)
 
-net = Net()
-params = list(net.parameters())
-out = net(x)
+    # define initial grad = 0
+    opt.zero_grad()
 
-print('before update weight:', params[0])  # conv1's .weight
-# print('out:', out)
-# print('损失：', cost)
+    # lost functional
+    cost = criterion(target, output)
 
-# 优化
-optimizer = optim.SGD(net.parameters(), lr=10)
-optimizer.zero_grad()
-cost = criterion(out, y)
-cost.backward()
-optimizer.step()
-print('after update weight:', params[0])
+    # backward
+    cost.backward()
+
+    # 优化器优化朝默认方向优化
+    opt.step()
+
+    if i % 10 == 0:
+
+        print('epoch:{}, loss:{}'.format(i, cost.data.item()))
+
+
+[w, b] = model.parameters()
+print('w, b', [w, b] )

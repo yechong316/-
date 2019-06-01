@@ -45,11 +45,11 @@ class Vgg11(nn.Module):
         self.fc_2 = nn.Linear(4096, 4096)
         self.fc_3 = nn.Linear(4096, 10)
 
-    def forward(self, input):
+    def forward(self, x):
         # ####################################################
         # 卷积层1
         # ####################################################
-        net = F.max_pool2d(input=F.relu(self.conv1_1(input)), kernel_size=(2, 2), padding=2)
+        net = F.max_pool2d(F.relu(self.conv1_1(x)), (2, 2), padding=2)
 
         # ####################################################
         # 卷积层2
