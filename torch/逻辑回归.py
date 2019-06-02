@@ -5,6 +5,12 @@ import torch.nn.functional as F
 
 
 data=np.loadtxt(r"C:\Users\dell\Downloads\german.data-numeric")
+
+mean = np.mean(data, axis=0)
+std = np.std(data, 0)
+print(std.shape)
+
+
 # print(data[0])
 np.random.shuffle(data)
 # print('*'*50)
@@ -58,6 +64,8 @@ for i in range(epochs):
     x=torch.from_numpy(train_data).float()
     y=torch.from_numpy(train_lab).long()
     y_hat=net(x)
+
+    print(y_hat.shape)
     loss=criterion(y_hat,y) # 计算损失
 
     opt.zero_grad()
@@ -73,5 +81,5 @@ for i in range(epochs):
 
         accu = net(test_in)
 
-        print('epochs:{}, lost:{:.3f}, acc:{:.2f}'.format(i + 1, loss, accu))
+        print('epochs:{}, lost:{}, acc:{}'.format(i + 1, loss, accu[0][0]))
 
