@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1ae5480-863a-4812-8545-aff2cae69166" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Introduce-of-DL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Introduce-of-DL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/torch/vgg-torch.py" beforeDir="false" afterPath="$PROJECT_DIR$/torch/vgg-torch.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,27 +14,54 @@
     <favorites_list name="Introduce-of-DL" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/torch/vgg-torch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="115" lean-forward="true" selection-start-line="113" selection-start-column="34" selection-end-line="114" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#125#1636#0" />
-                <element signature="e#164#218#0" />
-                <element signature="e#349#403#0" />
-                <element signature="e#536#590#0" />
-                <element signature="e#816#870#0" />
-                <element signature="e#1096#1150#0" />
-                <element signature="e#1376#1430#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.16380449">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/torch/莫凡RNN原版.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="96" column="46" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="46" />
+                  <folding>
+                    <element signature="e#191#203#0" expanded="true" />
+                    <element signature="e#1913#2791#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/torch/torch-RNN.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="512">
+                  <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+                  <folding>
+                    <element signature="e#0#12#0" expanded="true" />
+                    <element signature="e#789#1263#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/rnn.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1235">
+                  <caret line="483" column="8" selection-start-line="483" selection-start-column="8" selection-end-line="483" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#16361#21927#1" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,6 +90,7 @@
       <find>max_pool2d</find>
       <find>4_</find>
       <find>2</find>
+      <find>input_size</find>
     </findStrings>
     <replaceStrings>
       <replace>128</replace>
@@ -115,12 +140,14 @@
         <option value="$PROJECT_DIR$/torch/pytorch入门.py" />
         <option value="$PROJECT_DIR$/torch/逻辑回归.py" />
         <option value="$PROJECT_DIR$/torch/vgg-torch.py" />
+        <option value="$PROJECT_DIR$/torch/莫凡RNN原版.py" />
+        <option value="$PROJECT_DIR$/torch/torch-RNN.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="520" />
-    <option name="y" value="10" />
+    <option name="x" value="147" />
+    <option name="y" value="171" />
     <option name="width" value="1605" />
     <option name="height" value="1050" />
   </component>
@@ -132,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,32 +172,27 @@
               <item name="Introduce-of-DL" type="462c0819:PsiDirectoryNode" />
               <item name="torch" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Introduce-of-DL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Introduce-of-DL" type="462c0819:PsiDirectoryNode" />
-              <item name="项目实战之门牌号码识别" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/旧电脑/人工智能/sklearn11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\人工智能\Introduce-of-DL\深度神经网络入门" />
-      <recent name="D:\人工智能\Introduce-of-DL\门牌号码识别" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\人工智能\Introduce-of-DL\torch\mnist\MNIST\raw" />
       <recent name="D:\人工智能\Introduce-of-DL\torch" />
       <recent name="D:\人工智能\Introduce-of-DL\项目实战之门牌号码识别" />
       <recent name="D:\人工智能\Introduce-of-DL" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\人工智能\Introduce-of-DL\深度神经网络入门" />
+      <recent name="D:\人工智能\Introduce-of-DL\门牌号码识别" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -184,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.vgg-torch">
+  <component name="RunManager" selected="Python.torch-RNN">
     <configuration name="手工编写梯度下降算法" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Introduce-of-DL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -198,6 +221,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/深度神经网络入门/手工编写梯度下降算法.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="莫凡RNN原版" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Introduce-of-DL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/torch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/torch/莫凡RNN原版.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -269,7 +313,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="torch搭建卷积神经网络" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="torch-RNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Introduce-of-DL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -281,7 +325,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/torch/torch搭建卷积神经网络.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/torch/torch-RNN.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,10 +357,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.torch-RNN" />
+        <item itemvalue="Python.莫凡RNN原版" />
         <item itemvalue="Python.vgg-torch" />
         <item itemvalue="Python.pytorch入门" />
         <item itemvalue="Python.手工编写梯度下降算法" />
-        <item itemvalue="Python.torch搭建卷积神经网络" />
       </list>
     </recent_temporary>
   </component>
@@ -344,22 +389,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49370277" visible="true" weight="0.19815059" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49370277" weight="0.29128137" />
       <window_info id="Structure" order="1" sideWeight="0.5010707" side_tool="true" weight="0.19815059" />
       <window_info id="Favorites" order="2" sideWeight="0.50629723" side_tool="true" weight="0.19815059" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.4993395" weight="0.38526914" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.4993395" weight="0.49716714" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5006605" side_tool="true" weight="0.4305949" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.91347426" visible="true" weight="0.3371105" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.7357992" weight="0.21529745" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.91347426" weight="0.34844193" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.7357992" weight="0.16005665" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -421,6 +465,26 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>np.array((y_pred == test_y)).astype(int)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(y_pred == test_y).type(int)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(y_pred == test_y).astype(int)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>y_pred == test_y</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>input</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -445,60 +509,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>nabla_b</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>delta_nabla_b</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>dnb</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>activations</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>delta</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/ops/variables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="158" column="6" selection-start-line="158" selection-start-column="6" selection-end-line="158" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/深度神经网络入门/前馈神经网络案例之流行服饰.py" />
-    <entry file="file://$PROJECT_DIR$/../ch03_DeepLearningFoundation/CNN/明星识别.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#209#637#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/ops/random_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/深度神经网络入门/tensorflow优化器的作用.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -875,17 +888,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/torch/vgg-torch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="115" lean-forward="true" selection-start-line="113" selection-start-column="34" selection-end-line="114" selection-end-column="35" />
+        <state relative-caret-position="370">
+          <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#125#1636#0" />
-            <element signature="e#164#218#0" />
-            <element signature="e#349#403#0" />
-            <element signature="e#536#590#0" />
-            <element signature="e#816#870#0" />
-            <element signature="e#1096#1150#0" />
-            <element signature="e#1376#1430#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/datasets/mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="60" column="55" lean-forward="true" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1235">
+          <caret line="483" column="8" selection-start-line="483" selection-start-column="8" selection-end-line="483" selection-end-column="8" />
+          <folding>
+            <element signature="e#16361#21927#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torch/莫凡RNN原版.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="96" column="46" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="46" />
+          <folding>
+            <element signature="e#191#203#0" expanded="true" />
+            <element signature="e#1913#2791#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torch/torch-RNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#789#1263#0" />
           </folding>
         </state>
       </provider>
